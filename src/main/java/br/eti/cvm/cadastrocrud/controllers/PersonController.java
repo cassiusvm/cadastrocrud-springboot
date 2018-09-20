@@ -1,4 +1,4 @@
-package br.eti.cvm.cadastrocrud.controllers.crud;
+package br.eti.cvm.cadastrocrud.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

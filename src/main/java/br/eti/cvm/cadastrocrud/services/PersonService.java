@@ -3,6 +3,7 @@ package br.eti.cvm.cadastrocrud.services;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import br.eti.cvm.cadastrocrud.model.Person;
 import br.eti.cvm.cadastrocrud.repositories.PersonRepository;
@@ -15,18 +16,16 @@ public class PersonService {
 		this.personRepository = personRepository;
 	}
 
-	public Person findByEmail(String email) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
+	@Transactional
 	public void create(Person person) {
-		// TODO Auto-generated method stub
-
+		personRepository.save(person);
 	}
-	
+
+	public Person findByEmail(String email) {
+		return personRepository.findByEmail(email);
+	}
+
 	public List<Person> findAll() {
 		return personRepository.findAll();
 	}
-
 }

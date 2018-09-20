@@ -21,8 +21,6 @@ public class DevBootstrap implements ApplicationListener<ContextRefreshedEvent> 
 	public void onApplicationEvent(ContextRefreshedEvent event) {
 		Random random = new Random();
 
-		Person person = null;
-
 		String[] randomWords = { "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto",
 				"Setembro", "Outubro", "Novembro", "Dezembro", "Domingo", "Segunda", "Terça", "Quarta", "Quinta",
 				"Sexta", "Sabado", "Manha", "Tarde", "Noite", "Sol", "Lua", "Chuva", "Vento", "Fogo", "Terra", "Gelo",
@@ -33,7 +31,7 @@ public class DevBootstrap implements ApplicationListener<ContextRefreshedEvent> 
 
 		String email;
 		for (int i = 0; i < 15; i++) {
-			person = new Person();
+			Person person = new Person();
 			person.setFirstName(randomWords[random.nextInt(length)]);
 			person.setLastName(randomWords[random.nextInt(length)]);
 			for (;;) {
@@ -52,5 +50,4 @@ public class DevBootstrap implements ApplicationListener<ContextRefreshedEvent> 
 			personService.create(person);
 		}
 	}
-
 }
