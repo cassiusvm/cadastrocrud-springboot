@@ -2,8 +2,9 @@ package br.eti.cvm.cadastrocrud.services;
 
 import java.util.List;
 
+import javax.transaction.Transactional;
+
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import br.eti.cvm.cadastrocrud.model.Person;
 import br.eti.cvm.cadastrocrud.repositories.PersonRepository;
