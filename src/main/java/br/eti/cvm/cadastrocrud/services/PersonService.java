@@ -2,8 +2,6 @@ package br.eti.cvm.cadastrocrud.services;
 
 import java.util.List;
 
-import javax.transaction.Transactional;
-
 import org.springframework.stereotype.Service;
 
 import br.eti.cvm.cadastrocrud.model.Person;
@@ -17,7 +15,6 @@ public class PersonService {
 		this.personRepository = personRepository;
 	}
 
-	@Transactional
 	public void create(Person person) {
 		personRepository.save(person);
 	}
