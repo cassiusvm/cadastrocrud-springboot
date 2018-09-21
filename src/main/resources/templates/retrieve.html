@@ -4,14 +4,28 @@
 <meta charset="UTF-8">
 <title>Cadastro CRUD - Recuperar</title>
 <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
+
+<link rel="stylesheet"
+	href="/webjars/datatables/css/jquery.dataTables.min.css">
+
 <script type="text/javascript" charset="utf8"
-	src="/webjars/jquery/dist/jquery.min.js"></script>
+	src="/webjars/jquery/jquery.min.js"></script>
+
 <script type="text/javascript" charset="utf8"
 	src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" charset="utf8"
+	src="/webjars/datatables/js/jquery.dataTables.min.js"></script>
+
+<script type="text/javascript" charset="utf8">
+$(document).ready( function () {
+    $('#personTable').DataTable();
+} );
+</script>
 </head>
 <body>
 	<div class="table-responsive">
-		<table class="table">
+		<table id="personTable" class="table">
 			<thead class="thead-dark">
 				<tr>
 					<th scope="col">FIRST NAME</th>
