@@ -17,7 +17,6 @@ public class DevBootstrap implements ApplicationListener<ContextRefreshedEvent> 
 		this.personService = personService;
 	}
 
-	@Override
 	public void onApplicationEvent(ContextRefreshedEvent event) {
 		Random random = new Random();
 
