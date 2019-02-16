@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Cadastro CRUD - Language</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="l10n.js"></script>
+</head>
+<body>
+	<h1 th:text="#{language}"></h1>
+
+	<br />
+	<br />
+	<span th:text="#{lang.change}"></span>:
+	<select id="locales">
+		<option value=""></option>
+		<option value="en" th:text="#{lang.eng}"></option>
+		<option value="pt" th:text="#{lang.pt}"></option>
+	</select>
+</body>
+</html>

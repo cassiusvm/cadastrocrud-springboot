@@ -1,11 +1,11 @@
-package br.eti.cvm.cadastrocrud.services;
+package br.eti.cvm.cadastrocrud.service;
 
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
 import br.eti.cvm.cadastrocrud.model.Person;
-import br.eti.cvm.cadastrocrud.repositories.PersonRepository;
+import br.eti.cvm.cadastrocrud.repository.PersonRepository;
 
 @Service
 public class PersonService {

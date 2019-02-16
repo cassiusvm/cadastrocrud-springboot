@@ -1,4 +1,4 @@
-package br.eti.cvm.cadastrocrud.controllers;
+package br.eti.cvm.cadastrocrud.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

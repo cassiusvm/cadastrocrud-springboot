@@ -7,7 +7,7 @@ import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.stereotype.Component;
 
 import br.eti.cvm.cadastrocrud.model.Person;
-import br.eti.cvm.cadastrocrud.services.PersonService;
+import br.eti.cvm.cadastrocrud.service.PersonService;
 
 @Component
 public class DevBootstrap implements ApplicationListener<ContextRefreshedEvent> {
